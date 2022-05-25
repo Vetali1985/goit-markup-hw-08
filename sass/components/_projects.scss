@@ -1,0 +1,120 @@
+
+
+.card-text {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+
+    .card-text__title {
+        margin-bottom: 4px;
+        color: var(--title-text-color);
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 2;
+        letter-spacing: 0.06em;
+    }
+.card-text__text {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.875;
+}
+
+}
+.absolt {
+    overflow: hidden;
+    position: relative;
+
+    .absolt__text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--overlay-progects);
+        transform: translateY(100%);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        opacity: 0;
+        color: var(--header-bg-color);
+        font-size: 18px;
+        line-height: 1.5555;
+        letter-spacing: 0.03em;
+        padding: 63px 24px 63px 24px;
+    }
+
+
+    &::before {
+        position: absolute;
+        display: inline-block;
+        background-color: var(--overlay-progects);
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transform: translateY(100%);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover::before {
+        opacity: 1;
+    }
+
+    &:hover.absolt::before {
+        transform: translateY(0);
+    }
+
+    .progects__links:hover &__text,
+    .progects__links:focus &__text {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.progects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+}
+
+.progects__item {
+    position: relative;
+    flex-basis: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.progects__item:nth-child(3n) {
+    margin-right: 0;
+}
+
+
+
+
+.progects__links {
+    display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+}
+
+
+
+.portfolio-nav {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    
+    .portfolio-nav__item {
+            margin-right: 8px;
+        }
+}
+
+
+
+
+

@@ -1,0 +1,55 @@
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+     display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+textarea {
+    resize: none;
+}
+
+ul,
+a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    max-width: 100%;
+    height: auto;
+}
+
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowarp;
+    clip-path: insert(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.centered {
+    text-align: center;
+}
