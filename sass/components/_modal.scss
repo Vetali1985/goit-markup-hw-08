@@ -16,15 +16,20 @@
 
 .modal {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    justify-content: flex-end;
-    min-width: 528px;
-    min-height: 521px;
-    background-color: var(--header-bg-color);
-    border-radius: 4px;
-    padding: 40px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        justify-content: flex-end;
+        width: 480px;
+        min-height: 609px;
+        background-color: var(--header-bg-color);
+        border-radius: 4px;
+        padding: 40px;
+        @media screen and (min-width: 1200px){
+            min-width: 528px;
+            min-height: 521px;
+        }
+    
     .modal__title {
             display: block;
             font-size: 20px;

@@ -16,11 +16,18 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__conteiner">
+        <div class="header__conteiner ">
             <nav class="nav-head">
                 <a class="logo" href="https://www.google.com/">
                     <span class="logo__web">Web</span>
                     <span class="logo__studio">Studio</span></a>
+                    <button class="btn-menu-mob" type="button">
+                        <svg width="40px" height="40px">
+                            <use href="./icon/sprite.svg#icon-menu_40px">
+                    
+                            </use>
+                        </svg>
+                    </button>
     
                 <ul class="site-nav">
                     <li class="site-nav__item"> <a href="./index.html" class="link site-nav__link">Студия</a></li>
@@ -62,19 +69,23 @@
             <div class="conteiner">
             <h1 class="invisible-header">Nav-button</h1>
             <!-- <div class="flex-container"> -->
-            <ul class=" portfolio-nav list">
+            <ul class=" portfolio-nav">
                 <li class="portfolio-nav__item"><button type="button" class="button  portfolio-nav__btn">Все</button> </li>
                 <li class="portfolio-nav__item"><button type="button" class="button  portfolio-nav__btn">Веб-сайты</button></li>
                 <li class="portfolio-nav__item"><button type="button" class="button  portfolio-nav__btn">Приложения</button></li>
                 <li class="portfolio-nav__item"><button type="button" class="button  portfolio-nav__btn">Дизайн</button></li>
                 <li class="portfolio-nav__item"><button type="button" class="button  portfolio-nav__btn">Маркетинг</button></li>
             </ul>
-        <!--progects-->
-            <ul class="progects list">
+        <!-- progects-->
+             <ul class="progects">
                 <li class="progects__item">
                     <a class="progects__links" href="">
                     <div class="absolt">
-                        <img src="./images/tech-crack.jpg" width="370" alt="Laptop">
+                        <img
+                        srcset="./images/tech-crack.jpg  1x,
+                        ./images/tech-crack-2x.jpg  2x
+                        " 
+                        src="./images/tech-crack.jpg" width="370" alt="Laptop">
                             <p class="absolt__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
                                 посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</p>
@@ -89,7 +100,11 @@
                 <li class="progects__item">
                     <a class="progects__links" href="">
                     <div class="absolt">
-                    <img src="./images/poster.jpg" width="370" alt="Basketball team poster ">
+                    <img 
+                    srcset="./images/poster.jpg  1x,
+                        ./images/poster-2x.jpg  2x
+                        " 
+                    src="./images/poster.jpg" width="370" alt="Basketball team poster ">
                 <p class="absolt__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                     позволит
                     посетителю получить
@@ -104,7 +119,11 @@
                 <li class="progects__item">
                     <a class="progects__links" href="">
                     <div class="absolt">
-                    <img src="./images/restoran.jpg" width="370" alt="restoran-app">
+                    <img 
+                    srcset="./images/restoran.jpg  1x,
+                        ./images/seafood-2x.jpg  2x
+                        " 
+                    src="./images/restoran.jpg" width="370" alt="restoran-app">
                 <p class="absolt__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                     позволит
                     посетителю получить
@@ -119,7 +138,11 @@
                 <li class="progects__item">
                     <a class="progects__links" href="">
                     <div class="absolt">
-                    <img src="./images/progect-prime.jpg" width="370" alt="headphones">
+                    <img 
+                    srcset="./images/progect-prime.jpg  1x,
+                        ./images/prime-2x.jpg  2x
+                        " 
+                    src="./images/progect-prime.jpg" width="370" alt="headphones">
                     <p class="absolt__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит
                         посетителю получить
@@ -134,7 +157,11 @@
                 <li class="progects__item">
                     <a class="progects__links" href="">
                     <div class="absolt">
-                    <img src="./images/progect-boxes.jpg" width="370" alt="Boxes">
+                    <img 
+                    srcset="./images/progect-boxes.jpg  1x,
+                        ./images/boxes-2x.jpg  2x
+                        " 
+                    src="./images/progect-boxes.jpg" width="370" alt="Boxes">
                     <p class="absolt__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит
                         посетителю получить
@@ -150,7 +177,11 @@
                 <li class="progects__item">
                     <a class="progects__links" href="">
                     <div class="absolt">
-                    <img src="./images/inspiration.jpg" width="370" alt="Imac">
+                    <img 
+                    srcset="./images/Inspiration.jpg  1x,
+                        ./images/inspir-2x.jpg  2x
+                        " 
+                    src="./images/inspiration.jpg" width="370" alt="Imac">
                     <p class="absolt__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит
                         посетителю получить
@@ -165,7 +196,11 @@
                 <li class="progects__item">
                     <a class="progects__links" href="">
                     <div class="absolt">
-                   <img src="./images/edition-limited.jpg" width="370" alt="Book">
+                   <img 
+                   srcset="./images/edition-limited.jpg  1x,
+                        ./images/limited-2x.jpg  2x
+                        " 
+                   src="./images/edition-limited.jpg" width="370" alt="Book">
                     <p class="absolt__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит
                         посетителю получить
@@ -180,7 +215,11 @@
                 <li class="progects__item">
                     <a class="progects__links" href="">
                     <div class="absolt">
-                    <img src="./images/project-lab.jpg" width="370" alt="Tag">
+                    <img 
+                    srcset="./images/project-lab.jpg  1x,
+                        ./images/lab-2x.jpg  2x
+                        " 
+                    src="./images/project-lab.jpg" width="370" alt="Tag">
                 <p class="absolt__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                     позволит
                     посетителю получить
@@ -195,7 +234,11 @@
                 <li class="progects__item">
                     <a class="progects__links" href="">
                     <div class="absolt">
-                    <img src="./images/gro-bes.jpg" width="370" alt="Lapto and hands">
+                    <img 
+                    srcset="./images/gro-bes.jpg  1x,
+                        ./images/growing-2x.jpg  2x
+                        " 
+                    src="./images/gro-bes.jpg" width="370" alt="Lapto and hands">
                     <p class="absolt__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит
                         посетителю получить
@@ -214,54 +257,58 @@
 
 <footer class="footer-bg">
     <div class="conteiner footer-conteiner">
-        <div class="footer-bg-flex">
-            <a class="logo-fr" href="https://www.google.com/">
-                <span class="logo-fr__web--accent">Web</span>
-                <span>Studio</span>
-            </a>
-            <address class="footer-adress">
-                <ul class="contacts-list list">
-                    <li>
-                        <p class="contacts-list__adress">г. Киев, пр-т Леси Украинки, 26</p>
+        <div class="footer-tablet">
+            <div class="footer-bg-flex">
+                <a class="logo-fr" href="https://www.google.com/">
+                    <span class="logo-fr__web--accent">Web</span>
+                    <span>Studio</span>
+                </a>
+                <address class="footer-adress">
+                    <ul class="contacts-list list">
+                        <li>
+                            <p class="contacts-list__adress">г. Киев, пр-т Леси Украинки, 26</p>
+                        </li>
+                        <li><a href="mailto:info@example.com" class="contacts-list__contacts">info@example.com</a> </li>
+                        <li><a href="tel:+380991111111" class="contacts-list__contacts contacts-list__contacts--tel">+38
+                                099 111 11
+                                11</a> </li>
+                    </ul>
+                </address>
+            </div>
+
+
+            <div class="social-footer">
+                <h2 class="title-footer">Присоединяйтесь</h2>
+
+                <ul class=" footer-social list">
+                    <li class="footer-social__item">
+                        <svg class="footer-social__icon" width="44px" height="44px">
+                            <use href="./icon/sprite.svg#icon-insta-footer">
+                            </use>
+                        </svg>
                     </li>
-                    <li><a href="mailto:info@example.com" class="contacts-list__contacts">info@example.com</a> </li>
-                    <li><a href="tel:+380991111111" class="contacts-list__contacts contacts-list__contacts--tel">+38 099
-                            111 11 11</a> </li>
+                    <li class="footer-social__item">
+                        <svg class="footer-social__icon" width="44px" height="44px">
+                            <use href="./icon/sprite.svg#icon-twiter-footer">
+                            </use>
+                        </svg>
+                    </li>
+                    <li class="footer-social__item">
+                        <svg class="footer-social__icon" width="44px" height="44px">
+                            <use href="./icon/sprite.svg#icon-facebook-footer">
+                            </use>
+                        </svg>
+                    </li>
+                    <li class="footer-social__item">
+                        <svg class="footer-social__icon" width="44px" height="44px">
+                            <use href="./icon/sprite.svg#icon-linkid-footer">
+                            </use>
+                        </svg>
+                    </li>
                 </ul>
-            </address>
+            </div>
         </div>
 
-
-        <div class="social-footer">
-            <h2 class="title-footer">Присоединяйтесь</h2>
-
-            <ul class=" footer-social list">
-                <li class="footer-social__item">
-                    <svg class="footer-social__icon" width="44px" height="44px">
-                        <use href="./icon/sprite.svg#icon-insta-footer">
-                        </use>
-                    </svg>
-                </li>
-                <li class="footer-social__item">
-                    <svg class="footer-social__icon" width="44px" height="44px">
-                        <use href="./icon/sprite.svg#icon-twiter-footer">
-                        </use>
-                    </svg>
-                </li>
-                <li class="footer-social__item">
-                    <svg class="footer-social__icon" width="44px" height="44px">
-                        <use href="./icon/sprite.svg#icon-facebook-footer">
-                        </use>
-                    </svg>
-                </li>
-                <li class="footer-social__item">
-                    <svg class="footer-social__icon" width="44px" height="44px">
-                        <use href="./icon/sprite.svg#icon-linkid-footer">
-                        </use>
-                    </svg>
-                </li>
-            </ul>
-        </div>
         <div class="subscription-footer">
             <b class="subscription-footer__text">Подпишитесь на рассылку</b>
             <div class="form-footer">

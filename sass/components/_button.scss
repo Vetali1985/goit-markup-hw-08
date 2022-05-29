@@ -20,12 +20,30 @@
     }
 }
 
+.btn-menu-mob{ 
+    display: block;
+    margin-left: auto;
+    background-color: transparent;
+    border-color: transparent;
+    @media screen and (min-width: 768px){
+        display: none;
+        
+    }
+   
+}
+.btn-menu-close{
+display: block;
+margin-left: auto; 
+margin-bottom: 30px;
+background-color: transparent;
+border-color: transparent;
+}
 .portfolio-nav__btn {
     padding-top: 6px;
     padding-bottom: 6px;
     padding-left: 22px;
     padding-right: 22px;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
     &:hover {
     background-color: var(--accent-text-color);
     color: var(--header-bg-color);
@@ -74,9 +92,10 @@
 
     &__icon {
     position: absolute;
-    right: 28px;
+    right: 155px;
+    top: 82px;
     fill: var(--header-bg-color);
-}
+    }
 }
 .btn-modal {
     position: absolute;

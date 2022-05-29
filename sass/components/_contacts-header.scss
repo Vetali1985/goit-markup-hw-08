@@ -1,43 +1,87 @@
 .contacts-header {
+
+    display: none;
     display: flex;
     margin-left: auto;
-    
+
+    @media screen and (min-width: 768px){
+flex-direction: column;
+    }
+        @media screen and (min-width: 1200px) {
+            flex-direction: row;
+        }
 
     .contacts-header__icon {
         margin-right: 10px;
     }
 
         .contacts-header__link {
-        display: flex;
-        align-items: normal;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        margin-left: 30px;
-        fill: var(--primary-text-color);
-        color: var(--primary-text-color);
-        font-weight: 500;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-            color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            display: none;
+            @media screen and (min-width: 768px){
+                display: flex;
+                
+                align-items: normal;
+                // padding-top: 20px;
+                padding-bottom: 10px;
+                margin-left: 30px;
+                fill: var(--primary-text-color);
+                color: var(--primary-text-color);
+                font-weight: 500;
+                line-height: 1.14;
+                letter-spacing: 0.02em;
+                transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-        &:not(:last-child) {
-            margin-left: 0;
-        }
+                &:not(:last-child) {
+                    margin-left: 0;
+                }
 
-        &:hover {
-            color: var(--accent-text-color);
-            fill: var(--accent-text-color);
-        }
+                &:hover {
+                    color: var(--accent-text-color);
+                    fill: var(--accent-text-color);
+                }
 
-        &:focus {
-            color: var(--accent-text-color);
-            fill: var(--accent-text-color);
-        }
+                &:focus {
+                    color: var(--accent-text-color);
+                    fill: var(--accent-text-color);
+                }
+                        }
+
+                    
+                
+@media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: normal;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 30px;
+    fill: var(--primary-text-color);
+    color: var(--primary-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .contacts-header__link:not(:last-child) {
+        margin-left: 0;
     }
 
+        .contacts-header__link:hover {
+        color: var(--accent-text-color);
+        fill: var(--accent-text-color);
+    }
 
+        .contacts-header__link:focus {
+        color: var(--accent-text-color);
+        fill: var(--accent-text-color);
+    }
 }
+
+
+}}
+
+
 
 
 
