@@ -20,24 +20,14 @@
     }
 }
 
-.btn-menu-mob{ 
-    display: block;
-    margin-left: auto;
-    background-color: transparent;
-    border-color: transparent;
-    @media screen and (min-width: 768px){
-        display: none;
-        
-    }
-   
-}
-.btn-menu-close{
-display: block;
-margin-left: auto; 
-margin-bottom: 30px;
-background-color: transparent;
-border-color: transparent;
-}
+
+// .btn-menu-close{
+// display: block;
+// margin-left: auto; 
+// margin-bottom: 30px;
+// background-color: transparent;
+// border-color: transparent;
+// }
 .portfolio-nav__btn {
     padding-top: 6px;
     padding-bottom: 6px;
@@ -95,7 +85,13 @@ border-color: transparent;
     right: 155px;
     top: 82px;
     fill: var(--header-bg-color);
+    @media screen and(min-width: 1200px) {
+            right: 20px;
+            top: 15px;
+        
     }
+    }
+    
 }
 .btn-modal {
     position: absolute;

@@ -17,17 +17,68 @@
 <body>
     <header class="header">
         <div class="header__conteiner ">
-            <a class="logo" href="https://www.google.com/">
+            <div class="gt">
+                <a class="logo" href="https://www.google.com/">
                     <span class="logo__web">Web</span>
                     <span class="logo__studio">Studio</span></a>
-                    <button class="btn-menu-mob" type="button">
-                        <svg width="40px" height="40px">
-                            <use href="./icon/sprite.svg#icon-menu_40px">
-
-                            </use>
-                        </svg>
-                    </button>
+                
+            
             <nav class="nav-head">
+            <button class="menu-mobile is-open" type="button" aria-expanded="false" data-menu-button>
+                <svg width="40px" height="40px" aria-controls="mobile-menu" aria-label="Переключатель мобильного меню ">
+                    <use class="icon-menu" href="./icon/sprite.svg#icon-menu_40px"></use>
+                    <use class="icon-cross" href="./icon/sprite.svg#icon-close_40px"></use>
+                </svg>
+            
+            
+            </button>
+            </div>
+            <div class="mobile-menu is-open" id="mobile-menu" data-menu>
+            
+                <div class="conteiner">
+                    <div class="mob-menu-top">
+                        <ul class="mobile-menu__list">
+                            <li class="mobile-menu__item"> <a href="https://www.google.com/"
+                                    class=" mobile-menu__link mobile-menu__link--current">Студия</a>
+                            </li>
+                            <li class="mobile-menu__item"> <a href="./portfolio.html" class="mobile-menu__link">Портфолио</a></li>
+                            <li class="mobile-menu__item"> <a href="https://www.google.com/" class=" mobile-menu__link">Контакты</a>
+                            </li>
+                        </ul>
+                        </ul>
+                    </div>
+                    <div class="mob-menu-bottom">
+                        <ul class="contacts-mob-menu">
+                            <li class="contacts-mob-menu__item">
+            
+                                <a href="tel:+380961111111" class="contacts-mob-menu__link contacts-mob-menu__link--accent">
+                                    +38 096 111 11 11</a>
+                            </li>
+                            <li class="contacts-mob-menu__item">
+                                <a href="mailto:info@devstudio.com" class=" contacts-mob-menu__link contacts-mob-menu__link--small">
+                                    info@devstudio.com</a>
+                            </li>
+                        </ul>
+                        <ul class="mob-menu-social">
+                            <li class="mob-menu-social__item inst">
+                                <a class="mob-menu-social__link " href="#">instagram</a>
+                            </li>
+                            <li class="mob-menu-social__item">
+                                <a class="mob-menu-social__link" href="#">twitter</a>
+                            </li>
+                            <li class="mob-menu-social__item">
+                                <a class="mob-menu-social__link" href="#">facebook</a>
+                            </li>
+                            <li class="mob-menu-social__item">
+                                <a class="mob-menu-social__link" href="#">linkedin</a>
+                            </li>
+                        </ul>
+                    </div>
+            
+            
+            
+                </div>
+            </div>
                     <ul class="site-nav">
                     <li class="site-nav__item"> <a href="https://www.google.com/" class=" site-nav__link site-nav__link--current">Студия</a></li>
                     <li class="site-nav__item"> <a href="./portfolio.html" class="link site-nav__link">Портфолио</a></li>
@@ -61,56 +112,7 @@
                 </li>
             </ul>
         </div>
-        <div class="mobile-menu is-hidden">
-            <button class="btn-menu-close" type="button">
-                <svg width="40px" height="40px">
-                    <use href="./icon/sprite.svg#icon-close_40px">
             
-                    </use>
-                </svg>
-            </button>
-            <div class="conteiner">
-                <div class="mob-menu-top">
-                    <ul class="mobile-menu__list">
-                        <li class="mobile-menu__item"> <a href="https://www.google.com/"
-                                class=" mobile-menu__link mobile-menu__link--current">Студия</a>
-                        </li>
-                        <li class="mobile-menu__item"> <a href="./portfolio.html" class="mobile-menu__link">Портфолио</a></li>
-                        <li class="mobile-menu__item"> <a href="https://www.google.com/" class=" mobile-menu__link">Контакты</a></li>
-                    </ul>
-                    </ul>
-                </div>
-            <div class="mob-menu-bottom">
-                <ul class="contacts-mob-menu">
-                    <li class="contacts-mob-menu__item">
-                
-                        <a href="tel:+380961111111" class="contacts-mob-menu__link contacts-mob-menu__link--accent">
-                            +38 096 111 11 11</a>
-                    </li>
-                    <li class="contacts-mob-menu__item">
-                        <a href="mailto:info@devstudio.com" class=" contacts-mob-menu__link contacts-mob-menu__link--small">
-                            info@devstudio.com</a>
-                    </li>
-                </ul>
-                <ul class="mob-menu-social">
-                    <li class="mob-menu-social__item inst">
-                        <a class="mob-menu-social__link " href="#">instagram</a>
-                    </li>
-                    <li class="mob-menu-social__item">
-                        <a class="mob-menu-social__link" href="#">twitter</a>
-                    </li>
-                    <li class="mob-menu-social__item">
-                        <a class="mob-menu-social__link" href="#">facebook</a>
-                    </li>
-                    <li class="mob-menu-social__item">
-                        <a class="mob-menu-social__link" href="#">linkedin</a>
-                    </li>
-                </ul></div> 
-            
-            
-
-            </div>
-        </div>
     </header>
     <main>
         <section class="hero">
@@ -469,7 +471,7 @@
 
 <footer class="footer-bg">
     <div class="conteiner footer-conteiner">
-        <div class="footer-tablet">
+        <div class="footer-adaptive">
             <div class="footer-bg-flex">
                 <a class="logo-fr" href="https://www.google.com/">
                     <span class="logo-fr__web--accent">Web</span>
