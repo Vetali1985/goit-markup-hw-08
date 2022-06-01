@@ -14,16 +14,24 @@ flex-direction: column;
     .contacts-header__icon {
         margin-right: 10px;
     }
-
+        .contacts-header__item{
+            @media screen and (min-width: 768px) {
+                margin-bottom: 10px;
+              
+            }
+            &:last-child{
+                margin-bottom: 0;
+            }
+                        @media screen and (min-width: 1200px){
+                            margin-right: 30px;
+                        }
+                        
+        }
         .contacts-header__link {
             display: none;
             @media screen and (min-width: 768px){
                 display: flex;
-                
                 align-items: normal;
-                // padding-top: 20px;
-                padding-bottom: 10px;
-                margin-left: 30px;
                 fill: var(--primary-text-color);
                 color: var(--primary-text-color);
                 font-weight: 500;
@@ -51,10 +59,10 @@ flex-direction: column;
                 
 @media screen and (min-width: 1200px) {
     display: flex;
-    align-items: normal;
+    align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-left: 30px;
+    
     fill: var(--primary-text-color);
     color: var(--primary-text-color);
     font-weight: 500;

@@ -16,25 +16,23 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__conteiner ">
+        <div class="conteiner header__conteiner ">
             <div class="gt">
                 <a class="logo" href="https://www.google.com/">
                     <span class="logo__web">Web</span>
                     <span class="logo__studio">Studio</span></a>
             
-            
-                <nav class="nav-head">
-                    <button class="menu-mobile is-open" type="button" aria-expanded="false" data-menu-button>
+            <button class="menu-mobile is-open" type="button" aria-expanded="false" data-menu-button>
                         <svg width="40px" height="40px" aria-controls="mobile-menu" aria-label="Переключатель мобильного меню ">
-                            <use class="icon-menu" href="./icon/sprite.svg#icon-menu_40px"></use>
-                            <use class="icon-cross" href="./icon/sprite.svg#icon-close_40px"></use>
+                            <use class="icon-menu" href="./icon/sprite.svg#icon-close_40px"></use>
+                            <use class="icon-cross" href="./icon/sprite.svg#icon-menu_40px"></use>
                         </svg>
-            
-            
-                    </button>
-            </div>
-                <div class="mobile-menu is-open" id="mobile-menu" data-menu>
-                
+            </button>
+                <nav class="nav-head">
+                    
+                </div>
+
+                <div class="mobile-menu" id="mobile-menu" data-menu>
                     <div class="conteiner">
                         <div class="mob-menu-top">
                             <ul class="mobile-menu__list">
@@ -132,12 +130,19 @@
                 <li class="progects__item">
                     <a class="progects__links" href="">
                     <div class="absolt">
+                        <picture>
+                            <source srcset="./images/tech-crack-desk-1x.jpg  1x,
+                                            ./images/tech-crack-desk-2x.jpg  2x
+                                            " media="(min-width: 1200px)" />
+                            <source srcset="./images/tech-crack-tab-1x.jpg  1x,
+                                            ./images/tech-crack-tab-2x.jpg  2x
+                                            " media="(min-width: 768px)" />
+                            <source srcset="./images/tech-crack-mob-1x.jpg  1x,
+                                            ./images/tech-crack-mob-2x.jpg  2x "
+                                media="(min-width: 320px)" />
+                            <img src="./images/tech-crack.jpg" width="370" alt="Laptop">
+                        </picture>
                         
-                        <img
-                        srcset="./images/tech-crack.jpg  1x,
-                                    ./images/tech-crack-2x.jpg  2x
-                        " 
-                        src="./images/tech-crack.jpg" width="370" alt="Laptop">
                             <p class="absolt__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
                                 посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</p>
@@ -152,11 +157,18 @@
                 <li class="progects__item">
                     <a class="progects__links" href="">
                     <div class="absolt">
-                    <img 
-                    srcset="./images/poster.jpg  1x,
-                        ./images/poster-2x.jpg  2x
-                        " 
-                    src="./images/poster.jpg" width="370" alt="Basketball team poster ">
+                        <picture>
+                            <source srcset="./images/poster-1x-desk.jpg  1x,
+                                            ./images/poster-2x-desk.jpg  2x
+                                            " media="(min-width: 1200px)" />
+                            <source srcset="./images/poster-tab-1x.jpg  1x,
+                                            ./images/poster-tab-2x.jpg  2x
+                                            " media="(min-width: 768px)" />
+                            <source srcset="./images/poster-mob-1x.jpg  1x,
+                                            ./images/poster-mob-2x.jpg  2x " media="(min-width: 320px)" />
+                            <img src="./images/poster.jpg" width="370" alt="Basketball team poster ">
+                        </picture>
+                    
                 <p class="absolt__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                     позволит
                     посетителю получить
@@ -171,11 +183,19 @@
                 <li class="progects__item">
                     <a class="progects__links" href="">
                     <div class="absolt">
-                    <img 
-                    srcset="./images/restoran.jpg  1x,
-                        ./images/seafood-2x.jpg  2x
-                        " 
-                    src="./images/restoran.jpg" width="370" alt="restoran-app">
+                        <picture>
+                            <source srcset="./images/seafood-1x-desk.jpg  1x,
+                                            ./images/seafood-2x-desk.jpg  2x
+                                            " media="(min-width: 1200px)" />
+                            <source srcset="./images/seafood-tab-1x.jpg  1x,
+                                            ./images/seafood-tab-2x.jpg  2x
+                                            " media="(min-width: 768px)" />
+                            <source srcset="./images/seafood-mob-1x.jpg  1x,
+                                            ./images/seafood-mob-2x.jpg  2x " 
+                                            media="(min-width: 320px)" />
+                            <img src="./images/restoran.jpg" width="370" alt="restoran-app">
+                        </picture>
+                    
                 <p class="absolt__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                     позволит
                     посетителю получить
@@ -190,11 +210,18 @@
                 <li class="progects__item">
                     <a class="progects__links" href="">
                     <div class="absolt">
-                    <img 
-                    srcset="./images/progect-prime.jpg  1x,
-                        ./images/prime-2x.jpg  2x
-                        " 
-                    src="./images/progect-prime.jpg" width="370" alt="headphones">
+                        <picture>
+                            <source srcset="./images/prime-1x-desk.jpg  1x,
+                                                                    ./images/prime-2x-desk.jpg  2x
+                                                                    " media="(min-width: 1200px)" />
+                            <source srcset="./images/prime-tab-1x.jpg  1x,
+                                                                    ./images/prime-tab-2x.jpg  2x
+                                                                    " media="(min-width: 768px)" />
+                            <source srcset="./images/prime-mob-1x.jpg  1x,
+                                                                    ./images/prime-mob-2x.jpg  2x " media="(min-width: 320px)" />
+                            <img src="./images/progect-prime.jpg" width="370" alt="headphones">
+                        </picture>
+                    
                     <p class="absolt__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит
                         посетителю получить
@@ -209,11 +236,19 @@
                 <li class="progects__item">
                     <a class="progects__links" href="">
                     <div class="absolt">
-                    <img 
-                    srcset="./images/progect-boxes.jpg  1x,
-                        ./images/boxes-2x.jpg  2x
-                        " 
-                    src="./images/progect-boxes.jpg" width="370" alt="Boxes">
+                        <picture>
+                            <source srcset="./images/boxes-1x-desk.jpg  1x,
+                                            ./images/boxes-2x-desk.jpg  2x
+                                            " media="(min-width: 1200px)" />
+                            <source srcset="./images/boxes-tab-1x.jpg  1x,
+                                                ./images/boxes-tab-2x.jpg  2x
+                                                " media="(min-width: 768px)" />
+                            <source srcset="./images/boxes-mob-1x.jpg  1x,
+                                        ./images/boxes-mob-2x.jpg  2x "
+                                media="(min-width: 320px)" />
+                            <img src="./images/progect-boxes.jpg" width="370" alt="Boxes">
+                        </picture>
+                    
                     <p class="absolt__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит
                         посетителю получить
@@ -229,11 +264,18 @@
                 <li class="progects__item">
                     <a class="progects__links" href="">
                     <div class="absolt">
-                    <img 
-                    srcset="./images/Inspiration.jpg  1x,
-                        ./images/inspir-2x.jpg  2x
-                        " 
-                    src="./images/inspiration.jpg" width="370" alt="Imac">
+                        <picture>
+                            <source srcset="./images/inspir-1x-desk.jpg  1x,
+                                            ./images/inspir-2x-desk.jpg  2x
+                                            " media="(min-width: 1200px)" />
+                            <source srcset="./images/inspir-tab-1x.jpg  1x,
+                                            ./images/inspir-tab-2x.jpg  2x
+                                            " media="(min-width: 768px)" />
+                            <source srcset="./images/inspir-mob-1x.jpg  1x,
+                                            ./images/inspir-mob-2x.jpg  2x " media="(min-width: 320px)" />
+                            <img src="./images/inspiration.jpg" width="370" alt="Imac">
+                        </picture>
+                    
                     <p class="absolt__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит
                         посетителю получить
@@ -248,11 +290,18 @@
                 <li class="progects__item">
                     <a class="progects__links" href="">
                     <div class="absolt">
-                   <img 
-                   srcset="./images/edition-limited.jpg  1x,
-                        ./images/limited-2x.jpg  2x
-                        " 
-                   src="./images/edition-limited.jpg" width="370" alt="Book">
+                        <picture>
+                            <source srcset="./images/limited-1x-desk.jpg  1x,
+                                    ./images/limited-2x-desk.jpg  2x
+                                    " media="(min-width: 1200px)" />
+                            <source srcset="./images/limited-tab-1x.jpg  1x,
+                                            ./images/limited-tab-2x.jpg  2x
+                                            " media="(min-width: 768px)" />
+                            <source srcset="./images/limited-mob-1x.jpg  1x,
+                                            ./images/limited-mob-2x.jpg  2x " media="(min-width: 320px)" />
+                            <img src="./images/edition-limited.jpg" width="370" alt="Book">
+                        </picture>
+                   
                     <p class="absolt__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит
                         посетителю получить
@@ -267,11 +316,18 @@
                 <li class="progects__item">
                     <a class="progects__links" href="">
                     <div class="absolt">
-                    <img 
-                    srcset="./images/project-lab.jpg  1x,
-                        ./images/lab-2x.jpg  2x
-                        " 
-                    src="./images/project-lab.jpg" width="370" alt="Tag">
+                        <picture>
+                            <source srcset="./images/lab-1x-desk.jpg  1x,
+                                            ./images/lab-2x-desk.jpg  2x
+                                            " media="(min-width: 1200px)" />
+                            <source srcset="./images/lab-tab-1x.jpg  1x,
+                                            ./images/lab-tab-2x.jpg  2x
+                                            " media="(min-width: 768px)" />
+                            <source srcset="./images/lab-mob-1x.jpg  1x,
+                                            ./images/lab-mob-2x.jpg  2x " media="(min-width: 320px)" />
+                            <img src="./images/project-lab.jpg" width="370" alt="Tag">
+                        </picture>
+                    
                 <p class="absolt__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                     позволит
                     посетителю получить
@@ -286,11 +342,18 @@
                 <li class="progects__item">
                     <a class="progects__links" href="">
                     <div class="absolt">
-                    <img 
-                    srcset="./images/gro-bes.jpg  1x,
-                        ./images/growing-2x.jpg  2x
-                        " 
-                    src="./images/gro-bes.jpg" width="370" alt="Lapto and hands">
+                        <picture>
+                            <source srcset="./images/growing-1x-desk.jpg  1x,
+                                            ./images/growing-2x-desk.jpg  2x
+                                            " media="(min-width: 1200px)" />
+                            <source srcset="./images/growing-tab-1x.jpg  1x,
+                                            ./images/growing-tab-2x.jpg  2x
+                                            " media="(min-width: 768px)" />
+                            <source srcset="./images/growing-mob-1x.jpg  1x,
+                                            ./images/growing-mob-2x.jpg  2x " media="(min-width: 320px)" />
+                            <img src="./images/gro-bes.jpg" width="370" alt="Lapto and hands">
+                        </picture>
+                    
                     <p class="absolt__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит
                         посетителю получить
@@ -309,7 +372,7 @@
 
 <footer class="footer-bg">
     <div class="conteiner footer-conteiner">
-        <div class="footer-tablet">
+        <div class="footer-adaptive">
             <div class="footer-bg-flex">
                 <a class="logo-fr" href="https://www.google.com/">
                     <span class="logo-fr__web--accent">Web</span>

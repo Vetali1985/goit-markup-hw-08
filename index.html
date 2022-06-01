@@ -16,24 +16,22 @@
 
 <body>
     <header class="header">
-        <div class="header__conteiner ">
+        <div class="conteiner header__conteiner ">
             <div class="gt">
                 <a class="logo" href="https://www.google.com/">
                     <span class="logo__web">Web</span>
                     <span class="logo__studio">Studio</span></a>
                 
-            
-            <nav class="nav-head">
             <button class="menu-mobile is-open" type="button" aria-expanded="false" data-menu-button>
                 <svg width="40px" height="40px" aria-controls="mobile-menu" aria-label="Переключатель мобильного меню ">
-                    <use class="icon-menu" href="./icon/sprite.svg#icon-menu_40px"></use>
-                    <use class="icon-cross" href="./icon/sprite.svg#icon-close_40px"></use>
+                    <use class="icon-menu" href="./icon/sprite.svg#icon-close_40px"></use>
+                    <use class="icon-cross" href="./icon/sprite.svg#icon-menu_40px"></use>
                 </svg>
-            
-            
-            </button>
-            </div>
-            <div class="mobile-menu is-open" id="mobile-menu" data-menu>
+                </button>
+            <nav class="nav-head">
+                
+                </div>
+                <div class="mobile-menu " id="mobile-menu" data-menu>
             
                 <div class="conteiner">
                     <div class="mob-menu-top">
@@ -60,7 +58,7 @@
                             </li>
                         </ul>
                         <ul class="mob-menu-social">
-                            <li class="mob-menu-social__item inst">
+                            <li class="mob-menu-social__item  ">
                                 <a class="mob-menu-social__link " href="#">instagram</a>
                             </li>
                             <li class="mob-menu-social__item">
@@ -74,11 +72,8 @@
                             </li>
                         </ul>
                     </div>
-            
-            
-            
                 </div>
-            </div>
+                </div>
                     <ul class="site-nav">
                     <li class="site-nav__item"> <a href="https://www.google.com/" class=" site-nav__link site-nav__link--current">Студия</a></li>
                     <li class="site-nav__item"> <a href="./portfolio.html" class="link site-nav__link">Портфолио</a></li>
@@ -213,11 +208,21 @@
                 <h2 class="section__title centered">Наша команда</h2>
                     <ul class="team">
                         <li class="team__item">
-                            <img 
-                            srcset="./images/img(4).jpg  1x,
-                                    ./images/img(4)-2x.jpg  2x
-                        "
-                            src="./images/img(4).jpg" width="270" alt="фото Игорь Демьяненко">
+                        <picture>
+                            <source srcset="./images/img(4)-1x-desk.jpg  1x,
+                                            ./images/img(4)-2x-desk.jpg  2x
+                                            " 
+                                            media="(min-width: 1200px)" />
+                            <source srcset="./images/img(4)-1x-tab.jpg  1x,
+                                            ./images/img(4)-2x-tab.jpg  2x
+                                            " 
+                                            media="(min-width: 768px)" />
+                            <source srcset="./images/img(4)-1x-mob.jpg  1x,
+                                            ./images/img(4)-2x-mob.jpg  2x "
+                                
+                                            media="(min-width: 320px)" />
+                            <img src="./images/img(4).jpg" width="270" alt="фото Игорь Демьяненко">
+                        </picture>
                             <div class="team__card">
                                 <h3 class="team__title">Игорь Демьяненко</h3>
                                 <p class="team__text">Product Designer</p>
@@ -255,11 +260,17 @@
                                     </div>
                         </li>
                         <li class="team__item">
-                            <img
-                            srcset="./images/img(1).jpg  1x,
-                                    ./images/img(1)-2x.jpg  2x
-                        "
-                            src="./images/img(1).jpg" width="270" alt="фото Ольга Репина">
+                            <picture>
+                                <source srcset="./images/img(1)-1x-desk.jpg  1x,
+                                                                ./images/img(1)-2x-desk.jpg  2x
+                                                                " media="(min-width: 1200px)" />
+                                <source srcset="./images/img(1)-1x-tab.jpg  1x,
+                                                                ./images/img(1)-2x-tab.jpg  2x
+                                                                " media="(min-width: 768px)" />
+                                <source srcset="./images/img(1)-1x-mob.jpg  1x,
+                                                                    ./images/img(1)-2x-mob.jpg  2x " media="(min-width: 320px)" />
+                                <img src="./images/img(1).jpg" width="270" alt="фото Ольга Репина">
+                            </picture>
                             <div class="team__card">
                                 <h3 class="team__title">Ольга Репина</h3>
                                 <p class="team__text">Frontend Developer</p>
@@ -302,11 +313,25 @@
                                 </li>
 
                         <li class="team__item">
-                            <img
-                            srcset="./images/img(2).jpg  1x,
-                                    ./images/img(2)-2x.jpg  2x
-                        "
-                            src="./images/img(2).jpg" width="270" alt="фото Николай Тарасов">
+                            <picture>
+                                <source 
+                                srcset="./images/img(2)-1x-desk.jpg  1x,
+                                    ./images/img(2)-2x-desk.jpg  2x
+                                    "
+                                    media="(min-width: 1200px)" 
+                                    />
+                                    <source 
+                                    srcset="./images/img(2)-1x-tab.jpg  1x,
+                                    ./images/img(2)-2x-tab.jpg  2x
+                                    "
+                                    media="(min-width: 768px)" />
+                                <source 
+                                srcset="./images/img(2)-1x-mob.jpg  1x,
+                                        ./images/img(2)-2x-mob.jpg  2x "
+                                        media="(min-width: 320px)" />
+                                        <img src="./images/img(2).jpg" width="270" alt="фото Николай Тарасов">
+                            </picture>
+                            
                             <div class="team__card">
                                 <h3 class="team__title">Николай Тарасов</h3>
                                 <p class="team__text">Marketing</p>
@@ -349,11 +374,17 @@
                                 </li>
 
                         <li class="team__item">
-                            <img 
-                            srcset="./images/img(3).jpg  1x,
-                                    ./images/img(3)-2x.jpg  2x
-                        "
-                            src="./images/img(3).jpg" width="270" alt="фото Михаил Ермаков">
+                            <picture>
+                                <source srcset="./images/img(3)-1x-desk.jpg  1x,
+                                                                ./images/img(3)-2x-desk.jpg  2x
+                                                                " media="(min-width: 1200px)" />
+                                <source srcset="./images/img(3)-1x-tab.jpg  1x,
+                                                                ./images/img(3)-2x-tab.jpg  2x
+                                                                " media="(min-width: 768px)" />
+                                <source srcset="./images/img(3)-1x-mob.jpg  1x,
+                                                                    ./images/img(3)-2x-mob.jpg  2x " media="(min-width: 320px)" />
+                                <img src="./images/img(3).jpg" width="270" alt="фото Михаил Ермаков">
+                            </picture>
                             <div class="team__card">
                                 <h3 class="team__title">Михаил Ермаков</h3>
                                 <p class="team__text">UI Designer</p>
@@ -390,7 +421,7 @@
                                 
                                                 </use>
                                             </svg></a>
-                                    </li>
+                                    </li></div>
                                 
                                 
                                 
@@ -538,7 +569,6 @@
         </div>
     </div>
 </footer>
-    
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <b class="modal__title">Оставьте свои данные, мы вам перезвоним</b>

@@ -11,12 +11,12 @@
     .advantage-studio__item {
         margin-bottom: 30px;
         @media screen and (min-width: 768px) {
-                width: calc(100% / 2 - 30px);
+                width: calc((100% - 60px) / 2);
                 margin-left: 30px;
                 margin-bottom: 30px;
             }
                 @media screen and (min-width: 1200px) {
-                    width: calc(100% / 4 - 30px);
+                width: calc((100% - 120px) / 4);
                     margin-left: 30px;
                     margin-bottom: 30px;
                 }
@@ -31,6 +31,10 @@
         font-weight: 700;
         line-height: 1.14;
         text-transform: uppercase;
+        text-align: center;
+        @media screen and (min-width: 768px){
+            text-align: start;
+        }
     }
 
     .advantage-studio__text {
@@ -42,15 +46,15 @@
 .advantage-img {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     // width: 270px;
-    // height: 120px;
+    height: 120px;
     border-radius: 4px;
     background-color: var(--comand-bg-color);
     
 
-    .advantage-img__svg {
-        padding: 25px 0;
-    }
+    // .advantage-img__svg {
+    //     padding: 25px 0;
+    // }
 }
 

@@ -86,12 +86,18 @@
                         margin-right: -30px;
                         margin-bottom: -30px;
                 }
+    .progects__links{
+    display: flex;
+    flex-direction: column;
+    height:  100%;
     
+}
 }
 
 .progects__item {
     position: relative;
     margin-bottom: 30px;
+    
 @media screen and (min-width: 768px){
 flex-basis: calc((100% - 60px) / 2);
     margin-right: 30px;
@@ -108,7 +114,9 @@ flex-basis: calc((100% - 60px) / 2);
     
     
 }
-
+.progects__item:last-child {
+    margin-bottom: 0;
+}
 
 
 
