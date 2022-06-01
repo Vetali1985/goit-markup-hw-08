@@ -1056,6 +1056,11 @@ a {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .footer-bg {
+    padding-bottom: 0;
+  }
+}
 
 .logo-fr {
   color: var(--header-bg-color);
@@ -1232,12 +1237,12 @@ a {
     align-items: baseline;
     justify-content: space-around;
     width: 100%;
-    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-adaptive {
     display: flex;
+    margin-bottom: 0;
   }
 }
 

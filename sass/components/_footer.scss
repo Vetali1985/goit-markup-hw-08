@@ -4,6 +4,9 @@
     background-color: var(--footer-bg-color);
     padding-top: 60px;
     padding-bottom: 60px;
+    @media screen and (min-width: 1200px){
+        padding-bottom: 0;
+    }
 }
 
 .logo-fr {
@@ -180,12 +183,13 @@
             align-items: baseline;
             justify-content: space-around;
             width: 100%;
-            margin-bottom: 60px;
+            
             
             
 }
 @media screen and (min-width: 1200px){
     display: flex;
+    margin-bottom: 0;
 }
 }
 .footer-tablet{
