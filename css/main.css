@@ -17,7 +17,6 @@
 }
 
 .conteiner {
-  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -31,11 +30,17 @@
 @media screen and (min-width: 768px) {
   .conteiner {
     max-width: 768px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .conteiner {
     max-width: 1200px;
+    padding-bottom: 94px;
   }
 }
 
@@ -68,6 +73,9 @@ body {
     padding-top: 94px;
     padding-bottom: 94px;
   }
+}
+.section .section--no-padding {
+  padding-bottom: 0;
 }
 
 .section__title {
@@ -144,6 +152,22 @@ a {
   text-align: center;
 }
 
+.mob-adapt {
+  width: 767px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .mob-adapt {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .no-padding-section {
+    padding-bottom: 0;
+  }
+}
+
 .header {
   position: relative;
   background-color: var(--header-bg-color);
@@ -157,16 +181,27 @@ a {
 }
 
 .header__conteiner {
-  width: 1200px;
   align-items: center;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
+.header__conteiner.header__conteiner--adapt {
+  margin-left: 0;
+  margin-right: 0;
+}
 @media screen and (min-width: 768px) {
   .header__conteiner {
     display: flex;
+    width: 1200px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__conteiner {
+    display: flex;
+    width: 1200px;
+    padding-bottom: 0;
   }
 }
 
@@ -194,6 +229,10 @@ a {
   }
 }
 
+.btn-mob {
+  margin-right: 15px;
+}
+
 .menu-mobile.is-open .icon-menu {
   display: none;
 }
@@ -216,8 +255,6 @@ a {
   .logo {
     font-size: 28px;
     line-height: 1.1071;
-    padding-top: 26px;
-    padding-bottom: 26px;
   }
 }
 .logo .logo__web {
@@ -625,7 +662,7 @@ a {
   padding-top: 118px;
   padding-bottom: 118px;
   background: rgba(47, 48, 58, 0.4);
-  max-width: 100%;
+  width: 767px;
   height: 400px;
   margin-right: auto;
   margin-left: auto;
@@ -641,6 +678,16 @@ a {
 }
 @media screen and (min-width: 768px) {
   .hero {
+    background-color: var(--hero-bg-color);
+    text-align: center;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background: rgba(47, 48, 58, 0.4);
+    max-width: 100%;
+    width: 1200px;
+    height: 400px;
+    margin-right: auto;
+    margin-left: auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -757,8 +804,19 @@ a {
   background-color: var(--comand-bg-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .section--no-padding {
+    padding-bottom: 0;
+  }
+}
+
 .section--outher-bg {
   background-color: var(--comand-bg-color);
+}
+@media screen and (min-width: 1200px) {
+  .section--outher-bg {
+    padding-bottom: 0;
+  }
 }
 
 .team {
@@ -781,7 +839,6 @@ a {
   }
 }
 .team .team__item {
-  width: 450px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -848,7 +905,8 @@ a {
   background-color: var(--accent-text-color);
   fill: var(--header-bg-color);
 }
-.social .social__item .social__item:last-child {
+
+.social__item:last-child {
   margin-right: 0;
 }
 
@@ -1013,6 +1071,9 @@ a {
   position: relative;
   margin-bottom: 30px;
 }
+.progects__item .progects__item:last-child {
+  margin-bottom: 0;
+}
 @media screen and (min-width: 768px) {
   .progects__item {
     flex-basis: calc((100% - 60px) / 2);
@@ -1032,6 +1093,10 @@ a {
   .progects__item .progects__item:nth-child(3n) {
     margin-right: 0;
   }
+}
+
+.progects__item:last-child {
+  margin-bottom: 0;
 }
 
 .progects__links {
@@ -1055,9 +1120,19 @@ a {
   background-color: var(--footer-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  width: 767px;
+  margin: 0 auto 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .footer-bg {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-bg {
+    padding-bottom: 0;
+  }
+  .footer-bg .conteiner {
     padding-bottom: 0;
   }
 }
@@ -1410,6 +1485,7 @@ a {
 .direction {
   display: flex;
   justify-content: space-between;
+  padding-top: 0;
 }
 @media screen and (max-width: 1199px) {
   .direction {
@@ -1451,19 +1527,23 @@ a {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  width: 480px;
 }
 @media screen and (min-width: 768px) {
   .portfolio-nav {
+    width: 100%;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .portfolio-nav {
     display: flex;
     flex-wrap: nowrap;
+    margin-bottom: 50px;
   }
 }
 

@@ -1,11 +1,21 @@
 
 
 .footer-bg {
+    // width: 480px;
     background-color: var(--footer-bg-color);
     padding-top: 60px;
     padding-bottom: 60px;
+    width: 767px;
+        margin: 0 auto 0 auto;
+    @media screen and (min-width: 768px) {
+            width: 100%;
+        }
     @media screen and (min-width: 1200px){
         padding-bottom: 0;
+        .conteiner{
+            padding-bottom: 0;
+        }
+        // width: 1200px;
     }
 }
 

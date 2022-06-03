@@ -15,19 +15,22 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="conteiner header__conteiner ">
+    <header class="header mob-adapt">
+        <div class="conteiner header__conteiner header__conteiner--adapt ">
             <div class="gt">
                 <a class="logo" href="https://www.google.com/">
                     <span class="logo__web">Web</span>
                     <span class="logo__studio">Studio</span></a>
-                
-            <button class="menu-mobile is-open" type="button" aria-expanded="false" data-menu-button>
-                <svg width="40px" height="40px" aria-controls="mobile-menu" aria-label="Переключатель мобильного меню ">
-                    <use class="icon-menu" href="./icon/sprite.svg#icon-close_40px"></use>
-                    <use class="icon-cross" href="./icon/sprite.svg#icon-menu_40px"></use>
-                </svg>
-                </button></div>
+            
+                <button class="menu-mobile is-open" type="button" aria-expanded="false" data-menu-button>
+                    <svg class="btn-mob" width="40px" height="40px" aria-controls="mobile-menu" aria-label="Переключатель мобильного меню ">
+                        <use class="icon-menu" href="./icon/sprite.svg#icon-close_40px"></use>
+                        <use class="icon-cross" href="./icon/sprite.svg#icon-menu_40px"></use>
+                    </svg>
+                </button>
+            </div>
+
+
             <nav class="nav-head">
                 
                 
@@ -111,14 +114,14 @@
     </header>
     <main>
         <section class="hero">
-            <div class="conteiner">
+            <div class="conteiner conteiner--mob-adaptiv">
                 <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
                 <button data-modal-open type="button" class="hero__button ">Заказать услугу</button>
             </div>
         </section>
-        <section class="section">
+        <section class="section section--no-padding mob-adapt">
 
-            <div class="conteiner ">
+            <div class="conteiner  ">
                 <h2 class="hidden">Наши преимущества</h2>
                 <ul class="advantage-studio">
                     <li class="advantage-studio__item">
@@ -203,7 +206,7 @@
 
         </div>
         </section>
-          <section class="section section--outher-bg">
+          <section class="section section--outher-bg mob-adapt">
             <div class="conteiner">
                 <h2 class="section__title centered">Наша команда</h2>
                     <ul class="team">
@@ -429,7 +432,7 @@
                             </section>
 
 
-        <section class="section">
+        <section class="section mob-adapt no-padding-section">
             <div class="conteiner">
                 <h2 class="section__title centered">Постоянные клиенты</h2>
                         

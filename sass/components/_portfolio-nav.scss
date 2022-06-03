@@ -8,16 +8,20 @@
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    width: 480px;
     
     @media screen and (min-width: 768px) {
+        width: 100%;
         display: flex;
         flex-wrap: nowrap;
         justify-content: center;
+        margin-bottom: 30px;
         }
                 @media screen and (min-width: 1200px) {
                     display: flex;
                     flex-wrap: nowrap;
+                    margin-bottom: 50px;
                 }
 }
 
