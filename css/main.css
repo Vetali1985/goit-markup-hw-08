@@ -102,6 +102,11 @@ body {
   }
 }
 
+.section--no-pading-top {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -160,12 +165,6 @@ a {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .no-padding-section {
-    padding-bottom: 0;
-  }
-}
-
 .header {
   position: relative;
   background-color: var(--header-bg-color);
@@ -184,10 +183,6 @@ a {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-}
-.header__conteiner.header__conteiner--adapt {
-  margin-left: 0;
-  margin-right: 0;
 }
 @media screen and (min-width: 768px) {
   .header__conteiner {
@@ -807,11 +802,6 @@ a {
 
 .section--outher-bg {
   background-color: var(--comand-bg-color);
-}
-@media screen and (min-width: 1200px) {
-  .section--outher-bg {
-    padding-bottom: 0;
-  }
 }
 
 .team {
@@ -1472,19 +1462,17 @@ a {
   margin-bottom: 30px;
 }
 
-.section--no-pading-top {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
 .direction {
   display: flex;
   justify-content: space-between;
   padding-top: 0;
+  padding-bottom: 94px;
 }
 @media screen and (max-width: 1199px) {
   .direction {
     display: none;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 .direction .direction__item {
@@ -1509,6 +1497,8 @@ a {
 
 @media screen and (max-width: 1199px) {
   .section__title--displayNone {
+    padding-top: 0;
+    padding-bottom: 0;
     display: none;
   }
 }

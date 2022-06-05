@@ -1,16 +1,16 @@
 
-.section--no-pading-top {
-    padding-top: 0;
-    padding-bottom: 0;
-}
+
 .direction {
     display: flex;
     justify-content: space-between;
     
             padding-top: 0;
+            padding-bottom: 94px;
     
     @media screen and (max-width: 1199px) {
             display: none;
+            padding-top: 0;
+                padding-bottom: 0;
         }
     .direction__item {
             position: relative;
@@ -34,6 +34,8 @@
                 }
 }
 .section__title--displayNone{@media screen and (max-width: 1199px) {
+    padding-top: 0;
+    padding-bottom: 0;
         display: none;
     }
 
