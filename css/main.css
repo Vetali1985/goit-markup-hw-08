@@ -40,7 +40,6 @@
 @media screen and (min-width: 1200px) {
   .conteiner {
     max-width: 1200px;
-    padding-bottom: 94px;
   }
 }
 
@@ -153,7 +152,6 @@ a {
 }
 
 .mob-adapt {
-  width: 767px;
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
@@ -599,9 +597,15 @@ a {
 }
 .btn-submit-ft__icon {
   position: absolute;
-  right: 155px;
+  right: 90px;
   top: 82px;
   fill: var(--header-bg-color);
+}
+@media screen and (min-width: 480px) {
+  .btn-submit-ft__icon {
+    right: 155px;
+    top: 82px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .btn-submit-ft__icon {
@@ -661,7 +665,6 @@ a {
   padding-top: 118px;
   padding-bottom: 118px;
   background: rgba(47, 48, 58, 0.4);
-  width: 767px;
   height: 400px;
   margin-right: auto;
   margin-left: auto;
@@ -716,7 +719,6 @@ a {
   }
 }
 .hero .hero__title {
-  width: 360px;
   margin: 0 auto;
   color: var(--header-bg-color);
   margin: 0 auto;
@@ -801,12 +803,6 @@ a {
   height: 120px;
   border-radius: 4px;
   background-color: var(--comand-bg-color);
-}
-
-@media screen and (min-width: 1200px) {
-  .section--no-padding {
-    padding-bottom: 0;
-  }
 }
 
 .section--outher-bg {
@@ -1070,7 +1066,7 @@ a {
   position: relative;
   margin-bottom: 30px;
 }
-.progects__item .progects__item:last-child {
+.progects__item:last-child {
   margin-bottom: 0;
 }
 @media screen and (min-width: 768px) {
@@ -1079,8 +1075,8 @@ a {
     margin-right: 30px;
     margin-bottom: 30px;
   }
-  .progects__item .progects__item:last-child {
-    margin-bottom: 0;
+  .progects__item:last-child {
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1089,13 +1085,6 @@ a {
     margin-right: 30px;
     margin-bottom: 30px;
   }
-  .progects__item .progects__item:nth-child(3n) {
-    margin-right: 0;
-  }
-}
-
-.progects__item:last-child {
-  margin-bottom: 0;
 }
 
 .progects__links {
@@ -1119,7 +1108,6 @@ a {
   background-color: var(--footer-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
-  width: 767px;
   margin: 0 auto 0 auto;
 }
 @media screen and (min-width: 768px) {
@@ -1286,21 +1274,30 @@ a {
   }
 }
 .form-footer .form-footer__input {
-  margin-bottom: 20px;
-  margin-right: 12px;
-  width: 450px;
+  width: 320px;
   height: 50px;
   padding: 15px 15px 16px;
+  margin-bottom: 20px;
   border-radius: 4px;
   color: rgba(255, 255, 255, 0.6);
   background-color: var(--footer-bg-color);
   border: 1px solid rgba(255, 255, 255, 0.3019607843);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1490196078);
 }
+@media screen and (min-width: 480px) {
+  .form-footer .form-footer__input {
+    width: 450px;
+    height: 50px;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .form-footer .form-footer__input {
     width: 350px;
     height: 50px;
+    margin-bottom: 0;
+    margin-right: 12px;
   }
 }
 
@@ -1526,7 +1523,6 @@ a {
   justify-content: flex-start;
   flex-wrap: wrap;
   margin-bottom: 40px;
-  width: 480px;
 }
 @media screen and (min-width: 768px) {
   .portfolio-nav {
@@ -1546,6 +1542,19 @@ a {
 }
 
 .portfolio-nav__item {
-  margin-bottom: 15px;
-  margin-right: 8px;
+  margin-top: 15px;
+}
+@media screen and (min-width: 400px) {
+  .portfolio-nav__item :nth-child(-n+2) {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio-nav__item {
+    margin-top: 0;
+  }
+}
+
+.portfolio-nav__item:nth-child(-n+3) {
+  margin-top: 0;
 }/*# sourceMappingURL=main.css.map */

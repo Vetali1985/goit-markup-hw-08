@@ -74,9 +74,13 @@
 
     &__icon {
     position: absolute;
-    right: 155px;
+    right: 90px;
     top: 82px;
     fill: var(--header-bg-color);
+    @media screen and (min-width: 480px) {
+            right: 155px;
+                top: 82px;
+        }
     @media screen and(min-width: 1200px) {
             right: 20px;
             top: 15px;

@@ -98,33 +98,28 @@
 .progects__item {
     position: relative;
     margin-bottom: 30px;
-    .progects__item:last-child {
-            margin-bottom: 0;}
+&:last-child {
+        margin-bottom: 0;
+    }
 @media screen and (min-width: 768px){
 flex-basis: calc((100% - 60px) / 2);
     margin-right: 30px;
     margin-bottom: 30px;
-    .progects__item:last-child {
-    margin-bottom: 0;
+    &:last-child {
+            margin-bottom: 30px;
+        }
 }
-}
+
  @media screen and (min-width: 1200px){
     flex-basis: calc((100% - 90px) / 3);
         margin-right: 30px;
         margin-bottom: 30px;
-        .progects__item:nth-child(3n) {
-                margin-right: 0;
-            }
+        
  }
-    
-    
 }
-.progects__item:last-child {
-    margin-bottom: 0;
-}
+  
 
-
-
+ 
 
 
 .progects__links {
