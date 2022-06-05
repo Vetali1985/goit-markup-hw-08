@@ -6,9 +6,11 @@
 
     @media screen and (min-width: 768px){
 flex-direction: column;
+justify-content: center;
     }
         @media screen and (min-width: 1200px) {
             flex-direction: row;
+            justify-content: center;
         }
 
     .contacts-header__icon {

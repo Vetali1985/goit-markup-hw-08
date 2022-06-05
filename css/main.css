@@ -177,6 +177,13 @@ a {
   align-items: center;
 }
 
+.header__conteiner {
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 @media screen and (min-width: 768px) {
   .header__conteiner {
     display: flex;
@@ -310,11 +317,13 @@ a {
 @media screen and (min-width: 768px) {
   .contacts-header {
     flex-direction: column;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
   .contacts-header {
     flex-direction: row;
+    justify-content: center;
   }
 }
 .contacts-header .contacts-header__icon {
