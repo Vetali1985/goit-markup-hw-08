@@ -5,6 +5,8 @@
 }
 
 .portfolio-nav {
+    column-gap: 8px;
+    row-gap: 15px;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -28,11 +30,7 @@
 
 
 .portfolio-nav__item{
-    margin-top: 15px;
-@media screen and (min-width: 400px){
-:nth-child(-n+2) {
-        margin-top: 0;
-}}
+   
     @media screen and (min-width: 768px){
         margin-top: 0;
     }

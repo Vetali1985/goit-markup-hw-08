@@ -55,5 +55,8 @@ body {
 }
 .section--no-pading-top {
     padding-top: 0;
-padding-bottom: 0;
+    @media screen and (max-width: 1199px) {
+        padding-bottom: 0;
+    }
+
 }
