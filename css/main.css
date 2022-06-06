@@ -1117,6 +1117,7 @@ a {
 @media screen and (min-width: 1200px) {
   .footer-bg .conteiner {
     padding-bottom: 0;
+    width: fit-content;
   }
 }
 
